@@ -20,7 +20,7 @@ We'll start with a rough overview of:
 
 * Like ssh, but on can run against >1 at once.
 * Agent-less
-* Human-readable (yaml) language to define state of a system
+* Human-readable `YAML` language to define state of a system
 
 #### Inventory (files)
 
@@ -30,24 +30,20 @@ We'll start with a rough overview of:
 Looks like:
 
 ~~~
-mail.openmicroscopy.org.uk
-
 [omero-servers]
-nightshade.openmicroscopy.org
-ome-demoserver.openmicroscopy.org
+omero.example.org
+omero2.example.org
 
-[ci-servers]
-eel.openmicroscopy.org
-cowfish.openmicroscopy.org
+[web-servers]
+www.example.org
 ~~~
 {: .source}
 
 #### Vagrant
 
-* Takes care of the config and overhead of creating Virtual Machines
-* Vagrantfile
-* Test playbooks in a full vm rather than e.g. docker
-* For the purposes of this training: local vm
+* Takes care of creating and managing virtual machines
+* Uses a file called `Vagrantfile` to configure the virtual machine
+* For the purposes of this training use a local virtual machine
 
 #### Virtualbox
 

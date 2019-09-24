@@ -76,14 +76,12 @@ $ ansible localhost -m setup | grep processor_cores
 Here's we'll create an inventory file for eel and cowfish 
 
 ~~~
-$ echo eel.openmicroscopy.org >> inventory-file
-$ echo cowfish.openmicroscopy.org >> inventory-file
+$ echo localhost >> inventory-file
 $ cat inventory-file
 ~~~
 {: .bash}
 ~~~
-eel.openmicroscopy.org
-cowfish.openmicroscopy.org
+localhost
 ~~~
 {: .output}
 

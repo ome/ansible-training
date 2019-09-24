@@ -3,8 +3,6 @@ layout: lesson
 root: .
 ---
 
-[The initial (internal) G.Doc](https://docs.google.com/document/d/1YDueOUkEM7ANnLSJmw50lFW-zF7ngbGrPt2tDZgM14Y/edit#). 
-
 > ## Prerequisites
 >
 > Please follow [the setup instructions]({{ page.root }}/setup/) in advance of the session.

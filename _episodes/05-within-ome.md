@@ -13,22 +13,19 @@ keypoints:
 
 ### OME Ansible Roles
 
-The [public user example playbook](https://github.com/openmicroscopy/prod-playbooks/) which we just ran is really just a definition of what roles we wanted to be run against our vagrant machine. 
+The [public user example playbook](https://github.com/ome/ansible-example-omero-public-user) is mostly just a list of the roles with associated configuration parameters that we want to be run against our Vagrant machine.
 
-OME have an ever growing set of roles which were used to build the IDR and more recently production systems like the OMERO demo server and Nightshade, the College of Life Science's OMERO server.
+OME have an ever growing set of roles which were used to build the [IDR](https://idr.openmicroscopy.org/), and production systems like the [OMERO demo server](https://demo.openmicroscopy.org/) and Nightshade, the School of Life Science's OMERO server.
 
-Check them out at: [github](https://github.com/search?utf8=%E2%9C%93&q=org%3Aopenmicroscopy+ansible-role&type=)
+If you want to find out more see these links:
+- [Ansible roles on GitHub](https://github.com/search?utf8=%E2%9C%93&q=org%3Aome+ansible-role&type=)
+- [Ansible roles on Galaxy](https://galaxy.ansible.com/ome)
+- [IDR deployment playbooks](https://github.com/IDR/deployment/)
+- [OME production playbooks](https://github.com/ome/prod-playbooks)
 
-<img src="../fig/gh-ansible-roles.png" title="Lots of roles" alt="Lots of roles" style="display: block; margin: auto; width:600px; align=right" />
+### Testing
 
-#### management_tools
-
-* our systems inventory
-* ssh-keyscan to overcome the initial lack of ssh host keys
-
-#### Testing
-
-* Some roles can be tested with travis with molecule - separate training?
+* Most OME Ansible roles are tested using [Molecule](https://github.com/ome/ome-ansible-molecule).
 
 
 {% include links.md %}
