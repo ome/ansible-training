@@ -175,7 +175,7 @@ provider supports automatic port collision detection and resolution.
 {: .output}
 
 ## Rerun the playbook:
-A well written Ansible playbook is *idempotent*, this means you can run it multiple times and it will only make changes to the server if necessary:
+A well-written Ansible playbook is *idempotent*, this means you can run it multiple times and it will only make changes to the server if necessary:
 ~~~
 $ ansible-playbook -i inventory.yml playbook.yml
 ~~~
