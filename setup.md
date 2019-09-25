@@ -9,20 +9,19 @@ permalink: /setup/
 To follow along, you'll need the some prerequisites:
 
 #### Hardware Requirements:
-* 1.5GB ram free
-* 2GB local disk free
+* 2 GB ram free
+* 2 GB local disk free
 
 #### Software Requirements (links/instructions below):
-* Ansible (2.0+) 
-* Virtualbox (5+)
-* Vagrant (1.9+) 
+* Ansible (2.6+)
+* Virtualbox (6+)
+* Vagrant (2.2+)
 
 #### Git clones of:
-* [github.com/ome/ansible-examples-omero](https://github.com/ome/ansible-examples-omero)
-* [github.com/openmicroscopy/managment_tools](https://github.com/openmicroscopy/management_tools)
+* [https://github.com/ome/omero-deployment-examples](https://github.com/ome/omero-deployment-examples)
 
 #### Network Requirements:
-* Some steps will require the machine you're running Ansible from to be on the Life Sciences network, so locally connected or VPN.
+* You must have access to the public internet.
 
 ### Installing the requirements
 
@@ -56,10 +55,14 @@ localhost | SUCCESS => {
 
 ### Ansible Source and related files
 
-Make git clones of the following repositories, in your favourite clones directory, e.g. ~/clones/.
+The [omero-deployment-examples](https://github.com/ome/omero-deployment-examples) GitHub repository contains examples of deploying OMERO with Ansible on CentOS 7 or Docker.
 
-* [github.com/ome/ansible-examples-omero](https://github.com/ome/ansible-examples-omero)
-* [github.com/openmicroscopy/managment_tools](https://github.com/openmicroscopy/management_tools)
+~~~
+$ git clone --recurse https://github.com/ome/omero-deployment-examples
+~~~
+{: .bash}
+
+Make git clones of the following repositories, in your favourite clones directory, e.g. ~/clones/.
 
 
 
